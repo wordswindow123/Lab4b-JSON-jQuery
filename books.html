@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information</title>
+</head>
+<body>
+
+    <h1>Book Information</h1>
+    <div id="bookInfo"></div>
+
+    <script>
+        fetch("books.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Unable to load books");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const books = data.books;
+                const output = document.getElementById("bookInfo");
+
+                output.innerHTML = `
+                    <p>${books[0].title}</p>
+                    <p>${books[1].author}</p>
+                    <p>${books[0].title} — ${books[0].genres.join(", ")}</p>
+                    <p>${books[1].title} — ${books[1].genres.join(", ")}</p>
+                `;
+            })
+            .catch(error => {
+                document.getElementById("bookInfo").textContent =
+                    "Error: Unable to load book information.";
+            });
+    </script>
+
+</body>
+</html>
