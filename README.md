@@ -16,7 +16,7 @@ Contains information about two books, including:
 books.html
 Uses the JavaScript Fetch API to retrieve data from books.json and display the book information on a webpage.
 
- jquery-dom.html
+jquery-dom.html
 Demonstrates DOM manipulation using jQuery, including modifying HTML elements and handling user interactions.
 
  3. Technologies Used
@@ -43,5 +43,7 @@ Demonstrates DOM manipulation using jQuery, including modifying HTML elements an
 7. Check whether the book information is displayed correctly in the browser.
 8. Open jquery-dom.html using Live Server to test the jQuery DOM manipulation features.
 
+Name: [SRI THURGA THEVAR A/P SUPPUMONEY]
 
+Matric Number: [AI250250]
 
